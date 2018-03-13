@@ -1,0 +1,13 @@
+-# frozen_string_literal: true
+= simple_form_for(@notification) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :description
+    = f.input :category
+    = f.input :email
+    = f.input :cost
+    = f.input :term
+
+  .form-actions
+    = f.button :submit
