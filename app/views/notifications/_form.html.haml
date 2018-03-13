@@ -4,10 +4,8 @@
 
   .form-inputs
     = f.input :description
-    = f.input :category
+    = f.input :category, collection: ["awaria", "uszkodzenie", "usterka"]
     = f.input :email
-    = f.input :cost
-    = f.input :term
 
   .form-actions
     = f.button :submit

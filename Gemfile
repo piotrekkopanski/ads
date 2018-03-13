@@ -16,6 +16,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'listen', '>= 3.0.5', '< 3.2'
 gem 'haml-rails', '~> 1.0'
 gem 'simple_form', '~> 3.5', '>= 3.5.1'
+gem 'validates_email_format_of'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
