@@ -1,0 +1,23 @@
+.error_notification {
+  color: red;
+  border-color: red;
+  border-style: solid;
+  width: 271px;
+}
+
+span.error {
+  color: red;
+}
+
+.notice {
+  color: green;
+  background: lightgreen;
+}
+
+td.scroll {
+  height: 50px;
+  overflow: auto;
+  width: 133px;
+  float: left;
+  margin-top: 30px;
+}

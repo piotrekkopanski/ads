@@ -1,29 +1,29 @@
-%h1 Listing notifications
-
-%table
-  %thead
-    %tr
-      %th Description
-      %th Category
-      %th Email
-      %th Cost
-      %th Term
-      %th
-      %th
-      %th
-
-  %tbody
-    - @notifications.each do |notification|
+%h1.text-center Listing notifications
+%div.col-md-10
+  %table.table.table-bordered
+    %thead
       %tr
-        %td= notification.description
-        %td= notification.category
-        %td= notification.email
-        %td= notification.cost
-        %td= notification.term
-        %td= link_to 'Show', notification
-        %td= link_to 'Edit', edit_notification_path(notification)
-        %td= link_to 'Destroy', notification, method: :delete, data: { confirm: 'Are you sure?' }
+        %th Description
+        %th Category
+        %th Email
+        %th Cost
+        %th Term
+        %th 
+        %th
+        %th
 
-%br
+    %tbody
+      - @notifications.each do |notification|
+        %tr
+          %td.scroll= notification.description 
+          %td= notification.category
+          %td= notification.email
+          %td= number_to_currency(notification.cost, unit: "zł", separator: ",", format: "%n %u") 
+          %td= notification.term.strftime("%F %H:%M") 
+          %td= link_to 'Show', notification
+          %td= link_to 'Edit', edit_notification_path(notification)
+          %td= link_to 'Destroy', notification, method: :delete, data: { confirm: 'Are you sure?' }
 
-= link_to 'New Notification', new_notification_path
+  %br
+
+  = link_to 'New Notification', new_notification_path

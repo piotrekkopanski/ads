@@ -1,4 +1,5 @@
-%p#notice= notice
+.notice
+  %h1= notice
 
 %p
   %b Description:
@@ -11,10 +12,10 @@
   = @notification.email
 %p
   %b Cost:
-  = @notification.cost
+  = number_to_currency(@notification.cost, unit: "zł", separator: ",", format: "%n %u")
 %p
   %b Term:
-  = @notification.term
+  = @notification.term.strftime("%F %H:%M") 
 
 = link_to 'Edit', edit_notification_path(@notification)
 \|
