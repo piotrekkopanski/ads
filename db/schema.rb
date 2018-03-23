@@ -10,11 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180313192658) do
+ActiveRecord::Schema.define(version: 20180323132305) do
 
   create_table "notifications", force: :cascade do |t|
     t.text "description"
-    t.string "category"
+    t.integer "category"
     t.string "email"
     t.decimal "cost", precision: 8, scale: 2
     t.datetime "term"
