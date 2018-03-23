@@ -10,20 +10,21 @@ class Notification < ApplicationRecord
   private
 
     def set_cost_and_term
-      if category == 'accident'
+      case category
+      when 'accident'
       	self.term = Time.now + 4.hour
-        if !Time.now.hour.between?(9, 17)
-      	  self.cost = 100
-      	else
-      	  self.cost = 50
-      	end
-      elsif category == 'damage'
-        self.term = Time.now + 1.day
-        self.cost = 10	  
-      elsif category == 'fault'
-        self.term = Time.now + 3.day
+      	  if !Time.now.hour.between?(9, 17)
+      	    self.cost = 100
+      	  else
+      	    self.cost = 50
+      	  end
+      when 'damage'
+      	self.term = Time.now + 1.day
+        self.cost = 10
+      when 'fault'
+      	self.term = Time.now + 3.day
         self.cost = 1
-      end	
+      end
     end
 
 end
