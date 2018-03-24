@@ -5,10 +5,10 @@
   %div.form-group.col-md-5
     = f.input :description, input_html: { class: 'form-control', rows: '3' } 
   %div.form-group.col-md-5
-    = f.input :category, collection: Notification.categories.keys, input_html: { class: 'form-control' } 
+    = f.input :category, input_html: { class: 'form-control' } 
   %div.form-group.col-md-5
     = f.input :email, input_html: { class: 'form-control' }  
 
   .form-actions
     = f.button :submit, class: "btn btn-primary btn-lg"
-    %button= link_to 'Cancel', notifications_path, class: "btn btn-muted btn-lg" 
+    %button= link_to t('cancel'), notifications_path, class: "btn btn-muted btn-lg" 

@@ -1,0 +1,42 @@
+pl:
+  category:
+    accident: "uszkodzenie"
+    damage: "awaria"
+    fault: "wypadek"
+  errors:
+    messages:
+      blank: "pole nie może być puste"
+      too_short:
+        other: "jest za krótki (minimum to %{count} znaków)"
+  helpers:
+    submit:
+      create: "Dodaj"
+      update: "Zapisz"
+  notifications:
+    new:
+      title: 'Nowe zgłoszenie'
+  simple_form:
+    "yes": 'Tak'
+    "no": 'Nie'
+    required:
+      text: 'wymagany'
+      mark: '*'
+    error_notification:
+      default_message: "Sprawdź poniższe problemy:"
+    labels:
+      defaults:
+        password: 'Hasło'
+      notification:
+        new:
+          description: 'Opis'
+          category: 'Kategoria'
+          email: 'E-mail'
+        edit:
+          description: 'Opis'
+          category: 'Kategoria'
+          email: 'E-mail'
+  accident: "awaria"
+  damage: "uszkodzenie"
+  fault: "usterka"
+  cancel: "Anuluj"
+

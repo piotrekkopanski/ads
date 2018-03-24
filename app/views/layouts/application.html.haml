@@ -8,5 +8,8 @@
   
   %body
     %div.container-fluid
+      = link_to_unless I18n.locale == :en, "English", locale: :en 
+      |
+      = link_to_unless I18n.locale == :pl, "Polski", locale: :pl
       = yield 
 

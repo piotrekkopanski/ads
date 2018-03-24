@@ -19,6 +19,7 @@ gem 'simple_form', '~> 3.5', '>= 3.5.1'
 gem 'validates_email_format_of'
 gem 'bootstrap', '~> 4.0'
 gem 'jquery-rails'
+gem 'enumerize', '~> 2.2', '>= 2.2.2'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
