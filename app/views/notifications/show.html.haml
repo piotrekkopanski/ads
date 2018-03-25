@@ -12,7 +12,7 @@
   = @notification.email
 %p
   %b Cost:
-  = number_to_currency(@notification.cost, unit: "zł", separator: ",", format: "%n %u")
+  = number_to_currency(@notification.cost, unit: "PLN", separator: ",", format: "%n %u")
 %p
   %b Term:
   = @notification.term.strftime("%F %H:%M") 

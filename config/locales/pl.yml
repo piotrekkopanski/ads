@@ -13,6 +13,10 @@ pl:
       create: "Dodaj"
       update: "Zapisz"
   notifications:
+    notice:
+      create: 'Zgłoszenie zostało pomyślnie dodane'
+      update: 'Zgłoszenie zostało pomyślnie zaktualizowane'
+      destroy: 'Zgłoszenie zostało pomyślnie usunięte'
     new:
       title: 'Nowe zgłoszenie'
   simple_form:

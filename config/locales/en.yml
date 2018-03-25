@@ -4,6 +4,10 @@ en:
     damage: "damage"
     fault: "fault"
   notifications:
+    notice:
+      create: 'Notification was successfully created.'
+      update: 'Notification was successfully updated.'
+      destroy: 'Notification was successfully destroyed.'
     new:
       title: 'New notification'
   simple_form:
