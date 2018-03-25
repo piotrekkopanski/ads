@@ -2,21 +2,21 @@
   %h1= notice
 
 %p
-  %b Description:
+  %b= t('.description')
   = @notification.description
 %p
-  %b Category:
+  %b= t('.category')
   = t @notification.category
 %p
   %b Email:
   = @notification.email
 %p
-  %b Cost:
+  %b= t('.cost')
   = number_to_currency(@notification.cost, unit: "PLN", separator: ",", format: "%n %u")
 %p
-  %b Term:
+  %b= t('.term')
   = @notification.term.strftime("%F %H:%M") 
 
-= link_to 'New Notification', new_notification_path
+= link_to t('new_notification'), new_notification_path
 \|
-= link_to 'Back', notifications_path
+= link_to t('back'), notifications_path

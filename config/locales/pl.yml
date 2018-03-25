@@ -19,6 +19,20 @@ pl:
       destroy: 'Zgłoszenie zostało pomyślnie usunięte'
     new:
       title: 'Nowe zgłoszenie'
+    index:
+      title: 'Lista zgłoszeń'
+      description: 'Opis'
+      category: "Kategoria"
+      cost: 'Koszt'
+      term: 'Termin'
+      show: 'Pokaż'
+      edit: 'Edytuj'
+      destroy: 'Usuń'
+    show:
+      description: 'Opis:'
+      category: "Kategoria:"
+      cost: 'Koszt:'
+      term: 'Termin:'
   simple_form:
     "yes": 'Tak'
     "no": 'Nie'
@@ -43,4 +57,6 @@ pl:
   damage: "uszkodzenie"
   fault: "usterka"
   cancel: "Anuluj"
+  new_notification: "Dodaj zgłoszenie"
+  back: 'Wróć'
 

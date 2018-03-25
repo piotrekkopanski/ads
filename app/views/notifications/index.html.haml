@@ -1,13 +1,13 @@
-%h1.text-center Listing notifications
+%h1.text-center= t('.title')
 %div.col-md-10
   %table.table.table-bordered
     %thead
       %tr
-        %th Description
-        %th Category
-        %th Email
-        %th Cost
-        %th Term
+        %th= t '.description'
+        %th= t '.category'
+        %th= t '.email'
+        %th= t '.cost'
+        %th= t '.term'
         %th 
         %th
         %th
@@ -20,10 +20,10 @@
           %td= notification.email
           %td= number_to_currency(notification.cost, unit: "zł", separator: ",", format: "%n %u") 
           %td= notification.term.strftime("%F %H:%M") 
-          %td= link_to 'Show', notification
-          %td= link_to 'Edit' # add link to edit if necessary, edit_notification_path(notification)
-          %td= link_to 'Destroy', notification, method: :delete, data: { confirm: 'Are you sure?' }
+          %td= link_to t('.show'), notification
+          %td= link_to t('.edit') # add link to edit if necessary, edit_notification_path(notification)
+          %td= link_to t('.destroy'), notification, method: :delete, data: { confirm: 'Are you sure?' }
 
   %br
 
-  = link_to 'New Notification', new_notification_path
+  = link_to t('new_notification'), new_notification_path

@@ -10,6 +10,20 @@ en:
       destroy: 'Notification was successfully destroyed.'
     new:
       title: 'New notification'
+    index:
+      title: 'Listing notifications'
+      description: 'Description'
+      category: "Category"
+      cost: 'Cost'
+      term: 'Term'
+      show: 'Show'
+      edit: 'Edit'
+      destroy: 'Destroy'
+    show:
+      description: 'Description:'
+      category: "Category:"
+      cost: 'Cost:'
+      term: 'Term:'
   simple_form:
     "yes": 'Yes'
     "no": 'No'
@@ -25,3 +39,5 @@ en:
   damage: "damage"
   fault: "fault"
   cancel: "Cancel"
+  new_notification: "New notification"
+  back: 'Back'
